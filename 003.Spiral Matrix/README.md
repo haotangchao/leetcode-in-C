@@ -12,5 +12,4 @@ Given the following matrix:
 You should return [1,2,3,6,9,8,7,4,5].
 
 # 算法思路：
-  设置四个变量，left, right, top, bottom，每转一圈就往内缩小，以自动检测是否循环至最内圈。最后依旧是边界问题，即只留下一行和只留下一列的情况，
-分left == right 和 top == bottom 的情况讨论。
+  设置四个变量，left, right, top, bottom，每打一行或一列就将对应的边界减1并判断是否结束，不用考虑最后的边界问题。
