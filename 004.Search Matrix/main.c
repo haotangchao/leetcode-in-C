@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
 bool searchMatrix(int** matrix, int m, int n, int target) {
     int high = m * n - 1;
     int low = 0;
