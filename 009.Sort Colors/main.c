@@ -11,7 +11,7 @@ void sortColors(int* nums, int numsSize) {
     }
     int low = 0, high = numsSize - 1;
     int i;
-    for (i = 0; i < high;) {
+    for (i = 0; i <= high;) {
         if (nums[i] == 0) {
             swap(&nums[i++], &nums[low++]);
         }
